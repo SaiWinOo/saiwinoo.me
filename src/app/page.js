@@ -1,15 +1,14 @@
 import Experience from '@/components/Experience';
-import Image from 'next/image';
 import React from 'react'
 import { links } from '../../data/links';
 import Project from '@/components/Project';
-
+import About from '@/components/About';
 
 
 const page = () => {
   return (
     <div className='bg-secondary text-white min-h-screen'>
-      <div className='grid grid-cols-1 lg:grid-cols-2 max-w-[1000px] mx-auto'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 max-w-[1200px] p-10 mx-auto'>
         <div>
           <h1 className='font-bold text-4xl'>Sai Win Oo</h1>
           <h4>Experienced Fullstack Developer</h4>
@@ -31,14 +30,10 @@ const page = () => {
             </nav>
           </div>
         </div>
-        <div>
-          <div>
-            About Section
-          </div>
-
-            <Experience />
-
-                <Project />
+        <div className=''>
+          <About />
+          <Experience />
+          <Project />
         </div>
       </div>
     </div>

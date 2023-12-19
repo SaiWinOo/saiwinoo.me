@@ -4,6 +4,7 @@ import { experiences } from '../../data/Experiences';
 
 const Experience = () => {
   return (
+    <section id='experience' className='pt-20 pb-10'>
     <ol class="group/list">
       {
         experiences.map(experience => (
@@ -47,6 +48,7 @@ const Experience = () => {
         ))
       }
     </ol>
+    </section >
   )
 }
 
