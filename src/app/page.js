@@ -8,8 +8,8 @@ import About from '@/components/About';
 const page = () => {
   return (
     <div className='bg-secondary text-white min-h-screen'>
-      <div className='grid grid-cols-1 lg:grid-cols-2 max-w-[1200px] p-10 mx-auto'>
-        <div>
+      <div className='grid grid-cols-1 gap-10 items-start lg:grid-cols-2 max-w-[1200px] p-10 mx-auto'>
+        <div className='h-auto sticky top-0 pt-32'>
           <h1 className='font-bold text-4xl'>Sai Win Oo</h1>
           <h4>Experienced Fullstack Developer</h4>
           <p>I build exceptional and accessible digital experiences for the web.</p>
