@@ -17,3 +17,11 @@ html{
   background-color: red;
   width: 100px;
 }
+
+.nav-active > .nav-line{
+  @apply !w-16 !bg-white;
+}
+
+.nav-active > .nav-text{
+  @apply !text-white;
+}
