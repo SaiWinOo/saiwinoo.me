@@ -9,16 +9,6 @@ const Navbar = () => {
 
 
   const [activeLink, setActiveLink] = useState('#about');
-
-  // const handleIntersection = (entries) => {
-  //   entries.forEach((entry) => {
-  //     if (entry.isIntersecting) {
-  //       setActiveLink(`#${entry.target.id}`);
-  //     }
-  //   });
-  // };
-
-  
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -26,8 +16,6 @@ const Navbar = () => {
       }
     });
   };
-
-
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
@@ -45,10 +33,10 @@ const Navbar = () => {
 
 
   return (
-    <div className='h-auto sticky top-0 pt-32' >
-      <h1 className='font-bold text-4xl'>Sai Win Oo</h1>
-      <h4>Experienced Fullstack Developer</h4>
-      <p>I build exceptional and accessible digital experiences for the web.</p>
+    <div className='h-auto static lg:sticky top-0 pt-32' >
+      <h1 className='font-bold text-[50px] text-gray-200'>Sai Win Oo</h1>
+      <h4 className='font-semibold text-2xl text-gray-300'>Experienced Fullstack Developer</h4>
+      <p className='text-gray-400'>I build exceptional and accessible digital experiences for the web.</p>
       <div>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
