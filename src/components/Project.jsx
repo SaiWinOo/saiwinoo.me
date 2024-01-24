@@ -14,7 +14,7 @@ const Project = () => {
                 </div>
                 <div class="z-10 sm:order-2 sm:col-span-6">
                   <h3>
-                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://halcyon-theme.netlify.app/" target="_blank" rel="noreferrer noopener"><span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block">
+                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href={project.link} target="_blank" rel="noreferrer noopener"><span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block">
                     </span>
                       <span>
                         {project.title}
@@ -24,7 +24,7 @@ const Project = () => {
                   </h3>
                   <p class="mt-2 text-sm leading-normal text-gray-400">{project.summary}</p>
                 </div>
-                <Image alt={project.summary} loading="lazy" width="200" height="48" decoding="async" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style="color:transparent" src={project.image} />
+                {/* <Image alt={project.summary} loading="lazy" width="200" height="48" decoding="async" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style="color:transparent" src={project.image} /> */}
               </div>
             </li>
           ))
