@@ -4,12 +4,12 @@ import { FaInstagram } from "react-icons/fa6";
 import { FiTwitter } from "react-icons/fi";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 
-const links = [
-  { github: 'https://www.github.com/saiwinoo13' },
-  { instagram: 'https://www.facebook.com/saiwinoo13' },
-  { twitter: 'https://www.facebook.com/saiwinoo13' },
-  { linkedin: 'https://www.facebook.com/saiwinoo13' },
-];
+const links = {
+  github: 'https://www.github.com/SaiWinOo',
+  instagram: 'https://www.instagram.com/saiwinoo13/',
+  twitter: 'https://twitter.com/Saiwinoo',
+  linkedin: 'https://www.linkedin.com/in/saiwinoo/',
+};
 
 const SocialLinks = () => {
   return (
@@ -34,8 +34,6 @@ const SocialLinks = () => {
           <PiLinkedinLogoBold className='text-2xl hover:scale-110 transition-all duration-300' />
         </a>
       </li>
-
-
     </ul>
   )
 }
