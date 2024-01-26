@@ -6,6 +6,7 @@ import { links } from '../../data/links';
 import Project from '@/components/Project';
 import About from '@/components/About';
 import Navbar from '@/components/Navbar';
+import Footer from "@/components/Footer";
 
 
 const page = () => {
@@ -20,6 +21,7 @@ const page = () => {
           <Project />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -34,7 +34,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='h-[80vh] flex flex-col justify-between  static lg:sticky top-0 pt-32' >
+    <div className='h-[60vh] sm:h-[40vh] lg:h-[80vh] flex flex-col justify-between  static lg:sticky top-0 pt-32' >
       <div>
         <h1 className='font-bold text-[50px] text-gray-200'>Sai Win Oo</h1>
         <h4 className='font-semibold text-2xl text-gray-300'>Experienced Fullstack Developer</h4>
@@ -54,9 +54,14 @@ const Navbar = () => {
               }
             </ul>
           </nav>
+          <div className="block lg:hidden my-2">
+            <SocialLinks />
+          </div>
         </div>
       </div>
-      <SocialLinks />
+      <div className="hidden lg:block">
+        <SocialLinks />
+      </div>
     </div >
   )
 }
