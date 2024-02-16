@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Head from "./head"
@@ -13,7 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head />
-      <body id={'about'} className={inter.className}>{children}</body>
+      <body id={'about'} className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
