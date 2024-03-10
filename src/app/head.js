@@ -1,4 +1,4 @@
-export default function Head() {
+export default function Head({children}) {
   return (
     <>
       <title>
@@ -32,8 +32,7 @@ export default function Head() {
       <meta property="twitter:title" content="Sai Win Oo - Software Engineer And Tech Enthusiast" />
       <meta property="twitter:description" content="He is a Software Engineer who is passionate about developing web application." />
       <meta property="twitter:image" content="https://i.postimg.cc/CLgG5C8X/myself.jpg" />
-
-
+      {children}
     </>
   )
 }
